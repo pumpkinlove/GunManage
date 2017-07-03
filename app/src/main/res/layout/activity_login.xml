@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="250dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="50dp"
+        android:background="@mipmap/logo"
+        android:contentDescription="广西鑫达 枪支管理"/>
+
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:id="@+id/fl_config"
+        android:layout_margin="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+    <View
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <Button
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:id="@+id/btn_login"
+        android:layout_width="300dp"
+        android:layout_height="50dip"
+        android:background="@drawable/blue_btn_bg"
+        android:text="登  录"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:id="@+id/tv_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="浙江中正智能科技有限公司"
+        android:textColor="@color/grey"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:text="版本号：" />
+
+</LinearLayout>

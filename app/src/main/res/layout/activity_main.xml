@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/tabbottom"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_alignParentBottom="true"
+            android:background ="@drawable/demo_tab_bg"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textSize="12sp"
+                    android:drawableTop="@mipmap/tab_mytask_normal"
+                    android:id="@+id/tab_mytask_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingTop="3dp"
+                    android:text="枪支交接"
+                    android:textColor="#bcbfc1" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textSize="12sp"
+                    android:drawableTop="@mipmap/tab_uptask_normal"
+                    android:id="@+id/tab_myshift_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingTop="3dp"
+                    android:text="枪支列表"
+                    android:textColor="#bcbfc1" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textSize="12sp"
+                    android:drawableTop="@mipmap/tab_icon_setting_nl"
+                    android:id="@+id/tab_system_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingTop="3dp"
+                    android:text="系统服务"
+                    android:textColor="#bcbfc1" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/tabbottom"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+</TabHost>
